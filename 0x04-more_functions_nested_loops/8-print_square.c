@@ -14,7 +14,7 @@ void print_square(int size)
 		for (height = 0; height < size; height++)
 		{
 			for (width = 0; width < len; width++)
-				_putchar('£');
+				_putchar('#');
 
 			if (height == n - 1)
 				continue;
