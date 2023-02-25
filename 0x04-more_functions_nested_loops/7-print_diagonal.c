@@ -2,7 +2,7 @@
 
 /**
  * print_diagonal - Print a diagonal line
- * @n: The number of _ characters
+ * @n: The number of \ characters
  */
 
 void diagonal_line(int n)
@@ -19,7 +19,7 @@ void diagonal_line(int n)
 
 			if (len == n - 1)
 				continue;
-			_putchar('\\');
+			_putchar('\n');
 		}
 	}
 	_putchar('\n');
