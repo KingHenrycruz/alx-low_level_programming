@@ -5,7 +5,7 @@
  * @n: The number of \ characters
  */
 
-void diagonal_line(int n)
+void print_diagonal(int n)
 {
 	int len, space;
 
@@ -13,7 +13,7 @@ void diagonal_line(int n)
 	{
 		for (len = 0; len < n; len++)
 		{
-			for (space = 0; space < len; space ++)
+			for (space = 0; space < len; space++)
 				_putchar(' ');
 			_putchar('\\');
 
