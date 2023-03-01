@@ -8,8 +8,6 @@
 
 void puts2(char *str)
 {
-
-	printf("Enter a string: ");
 	scanf("%s", str);
 
 	puts2(str);
