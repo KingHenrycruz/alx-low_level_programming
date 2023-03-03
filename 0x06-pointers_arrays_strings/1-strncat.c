@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * _strncat - Concatenates two strings using at most an inputted number of bytes
+ * _strncat - Concatenates two strings
  * @dest: The destination of the appended string
- * @src: Where it appended from
+ * @src: where it's appended from
  * @n: The number of bytes
  * Return: A pointer to the resulting string
  */
