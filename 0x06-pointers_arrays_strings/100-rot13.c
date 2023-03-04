@@ -5,17 +5,26 @@
  * @n: integer to be printed
  */
 
-void print_number(int n)
+char *rot13(char *s)
 {
-	unsigned int num = n;
 
-	if (n < 0)
+	int count = 0, i;
+	char alphabet[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+	char rot13[] = "nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM";
+
+	while (*(s + count) != '\0')
 	{
-		_putchar('-');
-		num = -num;
-	}
-	if ((num / 10) > 0)
-		print_number(num / 10);
 
-	_putchar((num % 10) + '0');
+		for (i = 0; i < 52; i++)
+		{
+			if (*(s + count) == alphabet[i])
+			{
+				*(s + count) = rot13[i];
+				break;
+			}
+		}
+		count++;
+	}
+
+	return (s);
 }
