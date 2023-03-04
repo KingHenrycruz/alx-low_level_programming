@@ -8,18 +8,23 @@
 
 char *leet(char *s)
 {
-	int i1 = 0, i2;
-	char leet[8] = {'0', 'L', '?', 'E', 'A', '?', '?', '?'};
+	int i, c = 0;
+	int s1[] = {97, 101, 111 116, 108};
+	int ul[] = {65, 69, 79, 84, 76};
+	int n[] = {52, 51, 48, 55, 49};
 
-	while (s[i1])
+	while (s[c])
 	{
-		for (i2 = 0; i2 <= 7; i2++)
+		for (i = 0; i < 5; i++)
 		{
-			if (s[i1] == leet[i2] || s[i1] - 32 == leet[i2])
-				s[i1] = i2 + '0';
+			if (s[c] == sl[i] || s[c] == ul[i])
+			{
+				s[c] = n[i];
+				break;
+			}
 		}
 
-		i1++;
+		c++;
 	}
 	return (s);
 }
