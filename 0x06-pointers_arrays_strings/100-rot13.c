@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- * print_number - Prints an integer
- * @n: integer to be printed
+ * rot13 - encode a string using rot13
+ * @s: string input
  */
 
 char *rot13(char *s)
