@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * _puts - print a string
@@ -16,9 +17,9 @@ void _puts(char *str)
 	{
 		if (str[i] == '\0')
 		{
-			_putchar('\n');
+			printf("\n");
 			break;
 		}
-		_putchar(str[i]);
+		printf("%c", str[i]);
 	}
 }
