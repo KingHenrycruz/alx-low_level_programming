@@ -2,20 +2,21 @@
 #include <stdlib.h>
 
 /**
- * main - prints number all arguments it receives
- * @argv: Argument vector
- * @argc: Argument count
- * Return: Always 0
- */
-
+* main - multiplies two numbers
+* @argc: Argument count.
+* @argv: Argument vector.
+*
+* Return: on success, 0.
+* on failure, -1
+*/
 int main(int argc, char **argv)
 {
-	int  m, n, mul;
+	int m, n, mul;
 
 	if (argc != 3)
 	{
-		 printf("Error\n");
-		 return (1);
+		printf("Error\n");
+		return (1);
 	}
 	m = atoi(argv[1]);
 	n = atoi(argv[2]);
