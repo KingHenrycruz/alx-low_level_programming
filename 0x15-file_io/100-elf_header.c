@@ -1,5 +1,11 @@
 #include "main.h"
 #include <stdio.h>
+#include <elf.h>
+#include <sys/types.h>
+#include <sys/stat.h>
+#include <fcntl.h>
+#include <unistd.h>
+#include <stdlib.h>
 
 #define MAXSIZE 1204
 #define SE STDERR_FILENO
